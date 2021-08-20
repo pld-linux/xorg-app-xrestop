@@ -2,7 +2,7 @@ Summary:	X Resource Monitor
 Summary(pl.UTF-8):	Monitor zasobów X
 Name:		xorg-app-xrestop
 Version:	0.5
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	https://xorg.freedesktop.org/releases/individual/app/xrestop-%{version}.tar.bz2
@@ -15,6 +15,7 @@ BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-lib-libXext-devel
 BuildRequires:	xorg-lib-libXres-devel
 BuildRequires:	xorg-util-util-macros >= 1.8
+Obsoletes:	xrestop < 0.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
