@@ -1,20 +1,22 @@
 Summary:	X Resource Monitor
 Summary(pl.UTF-8):	Monitor zasobów X
 Name:		xorg-app-xrestop
-Version:	0.5
-Release:	2
+Version:	0.6
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	https://xorg.freedesktop.org/releases/individual/app/xrestop-%{version}.tar.bz2
-# Source0-md5:	5fb15fce4b643046df43e8179054773c
+Source0:	https://xorg.freedesktop.org/releases/individual/app/xrestop-%{version}.tar.xz
+# Source0-md5:	8c351345e8a101bfb3e8918bc64cec64
 URL:		https://xorg.freedesktop.org/
 BuildRequires:	ncurses-devel
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	rpmbuild(macros) >= 1.736
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-lib-libXext-devel
 BuildRequires:	xorg-lib-libXres-devel
 BuildRequires:	xorg-util-util-macros >= 1.8
+BuildRequires:	xz
 Obsoletes:	xrestop < 0.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
